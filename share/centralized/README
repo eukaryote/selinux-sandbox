@@ -1,0 +1,1 @@
+The refpolicy symlink works from within the vm if the selinux-policy-devel is installed.
