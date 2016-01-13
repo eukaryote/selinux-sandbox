@@ -12,12 +12,16 @@ sudo yum -q install -y \
     selinux-policy-doc \
     selinux-policy-devel \
     setools-console \
+    setools-devel \
+    libselinux \
+    libselinux-devel \
+    libselinux-python \
     libselinux-utils \
     setroubleshoot-server \
     mcstrans
 
 # miscellaneous
-sudo yum -q install vim git tree tmux mlocate elinks
+sudo yum -q install -y vim git tree tmux mlocate elinks
 
 # bug workaround
 cat >/etc/tmpfiles.d/setroubleshoot.conf <<EOF
